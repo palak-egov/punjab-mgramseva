@@ -108,7 +108,7 @@ public class FuzzySearchQueryBuilder {
                 parentNode.put("terms",jsonNode);
                 boolNode.put("filter", parentNode);
             }
-
+            log.info("finalQuery {}"+finalQuery);
             finalQuery = mapper.writeValueAsString(node);
 
         }
